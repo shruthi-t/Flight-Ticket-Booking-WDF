@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FlyHigh Airlines</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-cover bg-center min-h-screen flex items-center justify-center" style="background-image: url('logg.jpg');">
+
+    <!-- Login Page -->
+    <section id="login" class="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h2 class="text-3xl font-bold mb-6 text-center">Login</h2>
+        <form class="space-y-4" onsubmit="event.preventDefault(); loginUser();">
+            <input type="email" id="loginEmail" placeholder="Email" class="border p-2 rounded w-full" required>
+            <input type="password" id="loginPassword" placeholder="Password" class="border p-2 rounded w-full" required>
+            <button type="submit" class="bg-red-600 hover:bg-red-300 text-white p-2 rounded w-full">Login</button>
+        </form>
+    </section>
+
+    <script>
+        function loginUser() {
+            // Simulate successful login and store user info
+            localStorage.setItem('isLoggedIn', 'true');
+            alert('Login successful!');
+            window.location.href = 'booking.html'; // Redirect to booking page
+        }
+    </script>
+
+</body>
+</html>
