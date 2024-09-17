@@ -6,28 +6,28 @@
     <title>Sign Up - FlyHigh Airlines</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-cover bg-center min-h-screen flex items-center justify-center" style="background-image: url('sign.jpg');">
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
 
     <!-- Sign Up Page -->
-    <section id="signup" class="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg w-full max-w-md">
+    <section id="signup" class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <h2 class="text-3xl font-bold mb-6 text-center">Sign Up</h2>
         <form class="space-y-4" onsubmit="event.preventDefault(); signupUser();">
             <input type="text" id="username" placeholder="Username" class="border p-2 rounded w-full" required>
             <input type="email" id="email" placeholder="Email" class="border p-2 rounded w-full" required>
             <input type="password" id="password" placeholder="Password" class="border p-2 rounded w-full" required>
             <input type="password" placeholder="Confirm Password" class="border p-2 rounded w-full" required>
-            <button type="submit" class="bg-red-500 hover:bg-red-300 text-white p-2 rounded w-full">Sign Up</button>
+            <button type="submit" class="bg-gray-700 text-white p-2 rounded w-full">Sign Up</button>
         </form>
-        <!-- Added Login Link -->
+        <!-- Login Link -->
         <p class="mt-4 text-center">
             Already have an account? 
-            <a href="loggin.html" class="text-red-500 hover:text-red-700">Log in</a>
+            <a href="loggin.html" class="text-blue-500 hover:text-blue-700">Log in</a>
         </p>
     </section>
 
     <script>
         function signupUser() {
-            // Simulate saving user info (you could store it in localStorage)
+            // Simulate saving user info
             alert('Registration successful! Please log in.');
             window.location.href = 'login.html'; // Redirect to login
         }
